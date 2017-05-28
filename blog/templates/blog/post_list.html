@@ -3,9 +3,7 @@
         <title>Kilka słów o Pythonie</title>
     </head>
     <body>
-        <div>
-            <h2><a href="">Kilka słów o Pythonie</a></h2>
-        </div>
+      
 {% for post in posts %}
         <div>
             <p>published: {{ post.published_date }}</p>
@@ -13,6 +11,6 @@
             <p>{{ posts.text|linebreaksbr }}</p>
         </div>
 {% endfor %}
-     
+
     </body>
 </html>
